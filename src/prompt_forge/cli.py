@@ -36,7 +36,7 @@ def optimize(
         console.print("[red]错误：请先设置环境变量 XAI_API_KEY[/red]")
         raise typer.Exit(1)
 
-    with console.status("正在调用 Grok 优化提示词..."):
+    with console.status("Calling Grok to optimize prompt..."):
         response = client.chat.completions.create(
             model=model,
             messages=[
