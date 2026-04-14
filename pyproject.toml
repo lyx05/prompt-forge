@@ -1,0 +1,19 @@
+[project]
+name = "prompt-forge"
+version = "0.1.0"
+description = "Python CLI 提示词优化 + 批量测试工具（Grok 4.20 驱动）"
+authors = [{ name = "lyx05" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "typer[all]>=0.12.0",
+    "rich>=13.0.0",
+    "openai>=1.0.0",
+]
+
+[project.scripts]
+prompt-forge = "prompt_forge.cli:app"
+
+[tool.setuptools.package-dir]
+"" = "src"
