@@ -8,7 +8,7 @@ from openai import OpenAI
 
 app = typer.Typer(
     name="prompt-forge",
-    help="🚀 Python CLI 提示词优化 & 批量测试工具（Grok 4.20 驱动）",
+    help=help="🚀 Python CLI Prompt Optimization & Batch Testing Tool (Grok 4.20)",
     add_completion=False,
 )
 console = Console()
