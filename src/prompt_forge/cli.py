@@ -19,12 +19,12 @@ client = OpenAI(
 )
 
 def get_optimization_system_prompt() -> str:
-    return """你是一位世界顶级的 Prompt Engineer。请把用户提供的提示词优化成：
-1. 更清晰、更结构化
-2. 包含具体角色、任务、格式要求
-3. 加入 Chain-of-Thought 或 Few-shot（如果合适）
-4. 减少歧义，提高 LLM 输出质量
-请直接输出优化后的提示词，并用 --- 分隔后附上「优化说明」（3-5 点）。"""
+    return """You are a world-class Prompt Engineer. Improve the user's prompt to be:
+1. Clearer and more structured
+2. Include specific role, task, and output format requirements
+3. Add Chain-of-Thought or Few-shot examples if appropriate
+4. Reduce ambiguity and improve LLM output quality
+Output only the improved prompt, then separate with --- and add a short "Improvement notes" (3-5 points)."""
 
 @app.command()
 def optimize(
